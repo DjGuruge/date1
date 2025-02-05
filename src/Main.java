@@ -10,7 +10,7 @@ import java.time.format.FormatStyle;
 public class Main {
     public static void main(String[] args) {
         //Grabbing infos of time
-        OffsetDateTime now = OffsetDateTime.now();
+        OffsetDateTime now = OffsetDateTime.parse("2002-03-01T13:00:00Z");
         //formatting time on a medium size
         String dateString = now.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
         //formating text on short visual effect
