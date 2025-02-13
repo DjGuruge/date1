@@ -15,10 +15,10 @@ public class Main {
         String dateString = now.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM));
         //formating text on short visual effect
         String dateString2 = now.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT));
-        FormataDateFull.creaDateInFull(now);
+        FormataDateFull.creaDateInFull("2002-03-01T13:00:00Z");
         System.out.println(now);
         System.out.println(dateString);
         System.out.println(dateString2);
-        System.out.println(FormataDateFull.creaDateInFull(now));
+        System.out.println(FormataDateFull.creaDateInFull("2002-03-01T13:00:00Z"));
     }
 }

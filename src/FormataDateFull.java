@@ -5,8 +5,8 @@ import java.time.format.FormatStyle;
 
 public class FormataDateFull {
 
-    public static String creaDateInFull(OffsetDateTime data) {
-        ZonedDateTime now = OffsetDateTime.parse("2002-03-01T13:00:00Z").toZonedDateTime();
-        return now.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL));
+    public static String creaDateInFull(String data) {
+        ZonedDateTime nowZ = OffsetDateTime.parse(data).toZonedDateTime();
+        return nowZ.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.FULL));
     }
 }
